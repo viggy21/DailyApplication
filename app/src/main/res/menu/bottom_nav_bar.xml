@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/to_do_list"
+        android:title="To Do List"
+        android:icon="@drawable/baseline_check_box_24" />
+
+    <item
+        android:id="@+id/diary"
+        android:title="Diary"
+        android:icon="@drawable/baseline_menu_book_24" />
+
+
+</menu>

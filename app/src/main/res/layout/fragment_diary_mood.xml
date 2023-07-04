@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diary_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diary.DiaryMoodFragment">
+
+    <ImageButton
+        android:id="@+id/happy_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/happy_face"
+        app:layout_constraintBottom_toBottomOf="@+id/neutral_image_button"
+        app:layout_constraintEnd_toStartOf="@+id/neutral_image_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/neutral_image_button" />
+
+    <TextView
+        android:id="@+id/mood_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your mood"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <ImageButton
+        android:id="@+id/angry_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/angry_face"
+        app:layout_constraintBottom_toBottomOf="@+id/shocked_image_button"
+        app:layout_constraintEnd_toStartOf="@+id/shocked_image_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:backgroundTint="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/sad_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/sad_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/neutral_image_button"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:backgroundTint="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/neutral_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/neutral_face"
+        app:layout_constraintBottom_toBottomOf="@+id/sad_image_button"
+        app:layout_constraintEnd_toStartOf="@+id/sad_image_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/happy_image_button"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:backgroundTint="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/shocked_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/shocked_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/angry_image_button"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        android:backgroundTint="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
