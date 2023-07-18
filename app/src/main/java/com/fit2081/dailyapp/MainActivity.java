@@ -81,10 +81,14 @@ public class MainActivity extends AppCompatActivity implements DialogFragment.Di
                 inflateFragment(new DiarySummaryFragment(), "DiaryFragment");
 
             }
+            else if (id == R.id.calendar) {
+                inflateFragment(new CalendarFragment(), "CalendarFragment");
+            }
             else if (id == R.id.to_do_list) {
                 //getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, new ToDoFragment()).addToBackStack("ToDoFragment").commit();
                 inflateFragment(new ToDoFragment(), "ToDoFragment");
             }
+
             return true;
         }
     }
